@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceiling Cat Is Watching</title>
-    <link rel="icon" href="https://pare.wtf/watching.ico" type="image/x-icon">
+    <link id="favicon" rel="icon" href="https://github.com/p4re/pare.wtf/raw/refs/heads/main/watching.ico" type="image/x-icon">
     <style>
         body {
             margin: 20px;
+            border: 20px solid black;
             height: calc(100vh - 40px);
             display: flex;
             justify-content: center;
@@ -20,8 +21,27 @@
             max-height: 100%;
         }
     </style>
+    <script>
+        const originalTitle = "Ceiling Cat Is Watching";
+        const altTitle = "CEILING CAT DISAPPROVES!";
+        const originalFavicon = "https://github.com/p4re/pare.wtf/raw/refs/heads/main/watching.ico";
+        const altFavicon = "https://github.com/p4re/pare.wtf/raw/refs/heads/main/files/fm1.ico"; // Provide a disapproving icon URL here
+
+        let audio = new Audio('https://github.com/p4re/pare.wtf/raw/refs/heads/main/files/youtube_3HEMsoBLR1o_audio.mp3'); // Provide the URL to the sound here
+
+        window.addEventListener('blur', () => {
+            document.title = altTitle;
+            document.getElementById('favicon').href = altFavicon;
+            audio.play();
+        });
+
+        window.addEventListener('focus', () => {
+            document.title = originalTitle;
+            document.getElementById('favicon').href = originalFavicon;
+        });
+    </script>
 </head>
 <body>
-    <img src="https://pare.wtf/watching.png" alt="Watching">
+    <img src="https://github.com/p4re/pare.wtf/blob/main/watching.png?raw=true" alt="Watching">
 </body>
 </html>
