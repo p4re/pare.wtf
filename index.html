@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceiling Cat Is Watching</title>
-    <link id="favicon" rel="icon" href="https://github.com/p4re/pare.wtf/raw/refs/heads/main/watching.ico" type="image/x-icon">
+    <title>About Me</title>
     <style>
         body {
-            margin: 20px;
-            height: calc(100vh - 40px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(to bottom, #adadb2, #414045);
+            font-family: times, serif;
+            color: #fff;
+            background: url('https://web.archive.org/web/20070919162847/http://www.geocities.com/moonangel_forever/starwall.gif') repeat;
+            margin: 0;
+            padding: 0;
         }
-
-        img {
-            max-width: 100%;
-            max-height: 100%;
+        #bible {
+            width: 460px;
+            text-align: justify;
+        }
+        .num {
+            display: block;
+            width: 40px;
+            margin: 2px 8px 0 0;
+            float: left;
+            background-color: #fff;
+            color: #000;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        sup {
+            font-size: 9px;
+        }
+        h1 {
+            font-weight: normal;
+            text-align: center;
+        }
+        #gif1, #gif2, #gif3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: underline;
         }
     </style>
-    <script>
-        const originalTitle = "Ceiling Cat Is Watching";
-        const altTitle = "CEILING CAT DISAPPROVES!";
-        const originalFavicon = "https://github.com/p4re/pare.wtf/raw/refs/heads/main/watching.ico";
-        const altFavicon = "https://github.com/p4re/pare.wtf/raw/refs/heads/main/files/fm1.ico"; // Provide a disapproving icon URL here
-
-        let audio = new Audio('https://github.com/p4re/pare.wtf/raw/refs/heads/main/files/youtube_3HEMsoBLR1o_audio.mp3'); // Provide the URL to the sound here
-
-        window.addEventListener('blur', () => {
-            document.title = altTitle;
-            document.getElementById('favicon').href = altFavicon;
-            audio.play();
-        });
-
-        window.addEventListener('focus', () => {
-            document.title = originalTitle;
-            document.getElementById('favicon').href = originalFavicon;
-        });
-    </script>
 </head>
 <body>
-    <img src="https://github.com/p4re/pare.wtf/blob/main/watching.png?raw=true" alt="Watching">
+    <h1>☆ pare.wtf ☆</h1>
+    <div id="gif1">
+        <img width="300" src="https://web.archive.org/web/20090831180426if_/http://www.geocities.com/mohemed_taha/welcome.gif" alt="Welcome GIF">
+    </div>
+    <div id="gif2">
+        <img width="50" src="https://web.archive.org/web/20091019005055if_/http://cf.geocities.com/elevageshiningstar/star.gif" alt="Star GIF">
+    </div>
+    <div id="gif3">
+        <img width="500" src="https://web.archive.org/web/20090727071006if_/http://www.geocities.com/cam_champlain/divider.gif" alt="Divider GIF">
+    </div>
+    <div id="content" style="text-align: center;">
+        <p>
+            <sup>Introduction </sup>Hello! My name is Levi, otherwise known as pare online.
+        </p>
+        <p>
+            <sup>Hobbies </sup>I enjoy programming, art, skating, gaming, and talking with my <a href="https://chqls.carrd.co/">girlfriend!</a>
+        </p>
+        <p>
+            <sup>Socials & Stuff</sup> <a href="https://x.com/whoispare">Twitter</a> <a href="https://open.spotify.com/user/31wjkw4mao56ws4sikzarijldayi">Spotify</a> <a href="https://github.com/p4re">GitHub</a>  <a href="https://soundcloud.com/catalogizes">SoundCloud</a> <a href="https://www.roblox.com/users/3329034/profile">Roblox</a>
+        </p>
+    </div>
 </body>
 </html>
